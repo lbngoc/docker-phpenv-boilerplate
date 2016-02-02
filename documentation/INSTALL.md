@@ -35,5 +35,5 @@ docker-compose up -d
 ## Init docker in a existing project
 
 ```bash
-wget https://raw.githubusercontent.com/lbngoc/docker-phpenv-boilerplate/master/bin/docker-init.sh -O ./bin/docker-init.sh | bash
+wget -Nnv https://raw.githubusercontent.com/lbngoc/docker-phpenv-boilerplate/master/bin/docker-init.sh && bash docker-init.sh; rm -f docker-init.sh
 ```

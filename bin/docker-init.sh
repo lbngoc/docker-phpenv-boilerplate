@@ -55,7 +55,7 @@ fi
 # fi
 
 # Download all source file to current folder
-wget -qO- -O dockerenv.zip https://github.com/lbngoc/docker-phpenv-boilerplate.git && unzip dockerenv.zip && rm dockerenv.zip
+wget -O dockerenv.zip https://github.com/lbngoc/docker-phpenv-boilerplate/archive/master.zip && unzip dockerenv.zip && rm dockerenv.zip
 
 # Get input settings from user
 while [[ ! $PROJECT_NAME =~ ^[A-Za-z0-9-]+$ ]]; do
