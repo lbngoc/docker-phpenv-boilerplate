@@ -25,9 +25,15 @@ For more convenience use [CliTools.phar](https://github.com/webdevops/clitools) 
 ## First startup
 
 ```bash
-git clone --recursive https://github.com/webdevops/php-docker-boilerplate.git projectname
+git clone --recursive https://github.com/lbngoc/docker-phpenv-boilerplate.git projectname
 
 cd projectname
 
 docker-compose up -d
+```
+
+## Init docker in a existing project
+
+```bash
+wget https://raw.githubusercontent.com/lbngoc/docker-phpenv-boilerplate/master/bin/docker-init.sh -O ./bin/docker-init.sh | bash
 ```
