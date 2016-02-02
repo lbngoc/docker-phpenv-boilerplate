@@ -1,0 +1,36 @@
+{
+    "folders":
+    [
+        {
+            "folder_exclude_patterns":
+            [
+                "node_modules",
+                "source/wp-admin",
+                "source/wp-includes",
+                "etc",
+                // "documentation",
+                "docker",
+                // "bin"
+            ],
+            "path": "."
+        }
+    ],
+    "settings":
+    {
+        "tab_size": 4
+    },
+    "build_systems":
+    [
+        {
+            "name": "Docker Compose",
+            "working_dir": "${project_path:${folder}}",
+            "shell_cmd": "docker-compose up && xdg-open http://localhost:8080/"
+        },
+        {
+            "name": "Gulp",
+            "working_dir": "${project_path:${folder}}",
+            "shell_cmd": "gulp"
+        }
+    ]
+}
+
